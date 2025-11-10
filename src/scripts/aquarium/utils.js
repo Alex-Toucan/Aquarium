@@ -251,3 +251,4 @@ setInterval(() => {
 feedBtn.addEventListener("dblclick", spawnFood); // Doppelklick = Futtertablette.
 phBtn.addEventListener("dblclick", spawnPhTablet); // Doppelklick = pH-Tablette.
 lampBtn.addEventListener("dblclick", showThermometer); // Doppelklick = Thermometer anzeigen.
+

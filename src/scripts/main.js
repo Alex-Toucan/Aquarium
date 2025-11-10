@@ -17,10 +17,16 @@ setInterval(() => {
     drawBubbles();
     decay();
     updateBars();
+    updateThermometer();
 }, 50);
 
 //Verbindet die Buttons mit den Funktionen.
-feedBtn.onclick = () => actionFeed();
-filterBtn.onclick = () => actionFilter();
-lampBtn.onclick = () => actionLamp();
-phBtn.onclick = () => actionPh();
+feedBtn.onclick = actionFeed;
+filterBtn.onclick = actionFilter;
+lampBtn.onclick = actionLamp;
+phBtn.onclick = actionPh;
+
+// Doppel-Klick Events
+feedBtn.ondblclick = spawnFood;
+phBtn.ondblclick = spawnPhTablet;
+lampBtn.ondblclick = showThermometer;
